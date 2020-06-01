@@ -11,7 +11,7 @@
     if ($usuario == "mrami0" || $usuario == "mrami02") //Utilizando el operador || (or) y tambien se puede usar && (and)
     {
         //Si la instruccion es verdadera
-        echo "<h1>Usuario es valido</h1>";
+        echo "<h1>Usuario es válido</h1>";
     
     }
     else

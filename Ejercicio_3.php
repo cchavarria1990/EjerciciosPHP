@@ -6,8 +6,10 @@
 <?php
     echo "<h2>Arreglos</h2";
 
-    $miArreglo = array(10,20,30,40,50);
+    $miArreglo = array (10,20,30,40,50);
    
+    echo "<p>Contenido del elemento 2 del arreglo: $miArreglo[2]</p>";
+
     echo "<p>Despliega el contenido del arreglo:</p>";
     print_r ($miArreglo); //se utiliza esta funcion  para ver en forma entendible el contenido de la variable
 

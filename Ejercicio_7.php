@@ -9,9 +9,9 @@ header ("Content-type: text/html;charset=\"utf-8\"");
 if (is_numeric($_GET['numero']) && $_GET['numero'] >1)
 {
     echo "<h3>El valor ".$_GET['numero']." es numerico</h3>";
-    echo "<h3>El valor ".$_GET['numero']." es mayor que 1</h3>";
 }
-else{
+else
+{
     echo "<h3>El valor ".$_GET['numero']." No es numerico</h3>";
 }
 
@@ -25,13 +25,10 @@ if ($_GET['numero']  % 2 != 0)
             }
         }
     }
-else
-{
-    if($_GET['numero']  % $i !=0){
-    echo "<h2>El número ".$_GET['numero']." No es primo</h2>";
+    else 
+    {
+        echo "<h2>El número ".$_GET['numero']." No es primo</h2>";
     }
-}
-
 
 ?>
 <form>

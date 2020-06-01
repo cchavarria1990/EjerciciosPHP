@@ -26,15 +26,14 @@
         echo "<br>";
     }
 
-    function mostrarDatos($familia){
-        $contador = 0; //variable que se usará para lograr un incremento de los números
+    $contador = 0; //variable que se usará para lograr un incremento de los números
         
-       while ($contador < count($familia)) { //Extraemos los datos del array de uno en uno mientras haya datos
+    while ($contador < count($familia)) { //Extraemos los datos del array de uno en uno mientras haya datos
            echo ($contador+1).'- '.$familia[$contador].'<br/>'; //Mostramos el contenido del array usando el incremento de la variable
            $contador++; //Usamos la variable para ir incrementando los números
-       }  
-     }
-     mostrarDatos($familia);
+           echo "<h2>$familia[$contador] número de elemento $contador </h2>";
+           echo "<br>"; 
+    }  
      
     ?>
     </body>

@@ -6,38 +6,33 @@
 
 <?php
 header ("Content-type: text/html;charset=\"utf-8\"");
+if (is_numeric($_GET['numero']) && $_GET['numero'] >1)
+{
+    echo "<h3>El valor ".$_GET['numero']." es numerico</h3>";
 
-    if (is_numeric($_GET['num']) && $_GET['num'] >1)
-    {function primo($num){
-        $cont=0;
-        for($i=1;$i<=$num;$i++){
-            echo 3/2."<br>";
-            if($num% $i==0){
-                echo "$i<br>";
-            $cont++;
+}
+if ($_GET['numero']  % 2 != 0) 
+    {
+        for ($i = 1; $i <= $_GET['numero'] ; $i++) 
+        {
+            if ($_GET['numero']  % $i == 0) 
+            {
+                echo "<h2>El número ".$_GET['numero']." es primo</h2>";
             }
         }
-    if($cont==2){
-        return true;
+    }
+else
+{
+    echo "<h3>El valor ".$_GET['numero']." No es numerico</h3>";
+    echo "<h2>El número ".$_GET['numero']." No es primo</h2>";
+}
 
-    }
-    else{
-        return false;
-    }
-    }
-    }
-    else
-    {
-        echo "<h3>El valor ".$_GET['num']." No es numerico</h3>";
-        echo "<h2>El número ".$_GET['num']." No es primo</h2>";
-    }
 
-    
 ?>
 <form>
-    Escribe un número:
-    <input name="num" type="text" placeholder="Escribe número">
-    <input type="submit" value="Comprobar">
+Escribe un número:
+<input name="numero" type="text" placeholder="Escribe número">
+<input type="submit" value="Comprobar">   
 </form>
 
 </body>

@@ -4,7 +4,7 @@
 
 <h1>Ejercicio 3</h1>
 <?php
-    echo "<h2>Arreglos</h2";
+    echo "<h2>Arreglos</h2>";
 
     $miArreglo = array (10,20,30,40,50);
    

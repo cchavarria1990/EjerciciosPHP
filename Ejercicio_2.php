@@ -26,10 +26,10 @@
 
     $logico = true;
     $logico2 = false;
-    echo "<p>El contenido sw una variable tipo booleana verdadero: $logico y variable falsa: $logico2</p>";
+    echo "<p>El contenido de una variable tipo booleana verdadero: $logico y variable falsa: $logico2</p>";
 
     $variableNombreClase = "NombreClase";
-    echo "<p>Este es un nombre de una variable extraído de una cadena".$$variableNombreClase."</p>";
+    echo "<p>Este es un nombre de una variable extraído de una cadena ".$$variableNombreClase."</p>";
 ?>
 
 </body>

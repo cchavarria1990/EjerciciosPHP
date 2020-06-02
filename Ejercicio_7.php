@@ -14,14 +14,14 @@ for($i=1;$i<=$_GET['numero'];$i++){
 
 }
 if($cont==2){
-    echo "<h3>el numero es primo.</h3>";
+    echo "<h3>el numero ".$_GET['numero']." es primo.</h3>";
 }
 else{
-    echo "<h3>el numero no es primo.</h3>";
+    echo "<h3>el numero ".$_GET['numero']." no es primo.</h3>";
 }
 }
 else{
-    echo "<h3>el numero no es numerico.</h3>";
+    echo "<h3>el numero ".$_GET['numero']." no es numerico.</h3>";
 }
 
 
